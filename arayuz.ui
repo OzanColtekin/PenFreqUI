@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>657</width>
+    <height>479</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Fuel Calculator</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>221</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Şehir</string>
+    </property>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>42</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Plaka</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="plateNo">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>50</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="placeholderText">
+      <string>34</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>10</y>
+      <width>251</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Motor Tipi</string>
+    </property>
+    <widget class="QRadioButton" name="dieselButton">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>119</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Dizel</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="benzineButton">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>119</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Benzin</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>140</y>
+      <width>231</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Araç Tipi</string>
+    </property>
+    <widget class="QRadioButton" name="binekButton">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>119</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Binek</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="ticariButton">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>119</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ticari</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_5">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>140</y>
+      <width>251</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Araç Modeli</string>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>45</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Model</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>50</y>
+       <width>164</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Doblo Cargo</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>DOBLO CARGO S0</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>DOBLO CARGO S1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Doblo Cargo S2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>DOBLO COMBI 1.4 S1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>DOBLO COMBI S0</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>DOBLO COMBI S1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Doblo Combi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Doblo Combi BZ</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Doblo Combi S2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Doblò Panorama</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>DOBLO PANORAMA S1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Doblo Pratico</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Doblo Pratico S2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>DUCATO E6</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Ducato Kamyonet</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Ducato Kamyonet S7 E6d</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Ducato Minibüs</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Ducato Minibüs S7 E6d</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Ducato Van</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Ducato Van S7 E6d</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Egea Cross S2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Egea Cross S3</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Egea Cross Wagon S3</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>EGEA HB</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Egea HB S2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Egea HB S3</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>EGEA SEDAN</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Egea Sedan S2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Egea Sedan S3</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>EGEA SW</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Egea SW S2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Egea SW S3</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>FIORINO 1.4 BENZINLI</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>FIORINO 1.4 BENZINLI E6</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>FIORINO CARGO E6</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>FIORINO CARGO S1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>FIORINO COMBI</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>FIORINO COMBI 1.4</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>FIORINO COMBI E6</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>FIORINO COMBI S1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>FIORINO COMBIMIX</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>FIORINO PANORAMA E6</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>FIORINO PANORAMA S1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Fiorino Cargo</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Fiorino Cargo S2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Fiorino Combi BZ</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Fiorino Combi BZ S2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Fiorino Combi LPG</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Fiorino Combi LPG S2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Fiorino Combi S2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Fiorino Panorama</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>PRATICO S1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>YENI DUCATO S4 MBUS</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>YENI DUCATO S4 ŞASI</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>YENI DUCATO S4 VAN</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>270</y>
+      <width>241</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Penetrasyon-Frekans Grafik</string>
+    </property>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>55</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ay</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="tarihBox">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>50</y>
+       <width>141</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>2022-1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2022-2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2022-3</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2022-4</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2022-5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2022-6</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2022-7</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2022-8</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2022-9</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>100</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Göster</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="frekansButton">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>300</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Göster</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="penetrasyonButton">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>360</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Göster</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>300</y>
+      <width>134</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Aylık Frekanslar Grafiği</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>350</y>
+      <width>212</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Aylık Unique Benzin Alan Kişiler Oranı</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>657</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
